@@ -1,0 +1,15 @@
+C:\Users\Mert Sigirci\Desktop\XUnitDemo\XUnitDemo.Console\obj\Debug\net6.0\XUnitDemo.Console.csproj.AssemblyReference.cache
+C:\Users\Mert Sigirci\Desktop\XUnitDemo\XUnitDemo.Console\obj\Debug\net6.0\XUnitDemo.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mert Sigirci\Desktop\XUnitDemo\XUnitDemo.Console\obj\Debug\net6.0\XUnitDemo.Console.AssemblyInfoInputs.cache
+C:\Users\Mert Sigirci\Desktop\XUnitDemo\XUnitDemo.Console\obj\Debug\net6.0\XUnitDemo.Console.AssemblyInfo.cs
+C:\Users\Mert Sigirci\Desktop\XUnitDemo\XUnitDemo.Console\obj\Debug\net6.0\XUnitDemo.Console.csproj.CoreCompileInputs.cache
+C:\Users\Mert Sigirci\Desktop\XUnitDemo\XUnitDemo.Console\bin\Debug\net6.0\XUnitDemo.Console.exe
+C:\Users\Mert Sigirci\Desktop\XUnitDemo\XUnitDemo.Console\bin\Debug\net6.0\XUnitDemo.Console.deps.json
+C:\Users\Mert Sigirci\Desktop\XUnitDemo\XUnitDemo.Console\bin\Debug\net6.0\XUnitDemo.Console.runtimeconfig.json
+C:\Users\Mert Sigirci\Desktop\XUnitDemo\XUnitDemo.Console\bin\Debug\net6.0\XUnitDemo.Console.dll
+C:\Users\Mert Sigirci\Desktop\XUnitDemo\XUnitDemo.Console\bin\Debug\net6.0\XUnitDemo.Console.pdb
+C:\Users\Mert Sigirci\Desktop\XUnitDemo\XUnitDemo.Console\obj\Debug\net6.0\XUnitDemo.Console.dll
+C:\Users\Mert Sigirci\Desktop\XUnitDemo\XUnitDemo.Console\obj\Debug\net6.0\refint\XUnitDemo.Console.dll
+C:\Users\Mert Sigirci\Desktop\XUnitDemo\XUnitDemo.Console\obj\Debug\net6.0\XUnitDemo.Console.pdb
+C:\Users\Mert Sigirci\Desktop\XUnitDemo\XUnitDemo.Console\obj\Debug\net6.0\XUnitDemo.Console.genruntimeconfig.cache
+C:\Users\Mert Sigirci\Desktop\XUnitDemo\XUnitDemo.Console\obj\Debug\net6.0\ref\XUnitDemo.Console.dll
