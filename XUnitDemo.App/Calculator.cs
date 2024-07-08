@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace XUnitDemo.App
 {
-    public class Calculator : ICalculatorService
+    public class Calculator
     {
         private ICalculatorService _calculatorService;
 
