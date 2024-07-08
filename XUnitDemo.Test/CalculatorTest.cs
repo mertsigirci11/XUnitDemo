@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Moq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,10 +12,12 @@ namespace XUnitDemo.Test
     public class CalculatorTest
     {
         public Calculator calc;
+        public Mock<ICalculatorService> myMock;
 
         public CalculatorTest()
         {
-            calc = null;
+            myMock = new Mock<ICalculatorService>();
+            calc = new Calculator(myMock.Object);
         }
 
         /*
@@ -28,13 +31,14 @@ namespace XUnitDemo.Test
         public void Add_ReturnTrueResult_Test()
         {
             //Arrange
-            int firstNumber = 8, secondNumber = 5;
+            int firstNumber = 8, secondNumber = 5, expectedValue = 13;
+            myMock.Setup(x => x.Add(firstNumber, secondNumber)).Returns(expectedValue);
 
             //Act
             var result = calc.Add(firstNumber, secondNumber);
 
             //Assert
-            Assert.Equal(firstNumber + secondNumber, result);
+            Assert.Equal(expectedValue, result);
 
             /*              --Equal--
                 //Arrange
@@ -126,13 +130,20 @@ namespace XUnitDemo.Test
         }
 
         [Theory]
-        [InlineData(10, 15, 25)]
+        [InlineData(10, 15, 24)]
         [InlineData(11, 5, 16)]
         public void Add_ExceptZeroValues_Test(int num1, int num2, int total)
         {
             //This test method works twice because "InlineData" attribute written twice. So that the method test their values.
 
-            Assert.Equal(total, calc.Add(num1, num2));
+            //Arrange
+            myMock.Setup(x => x.Add(num1, num2)).Returns(total);
+
+            //Act
+            var actualTotal = calc.Add(num1, num2);
+
+            //Assert  
+            Assert.Equal(total, actualTotal);
         }
 
         [Theory]
@@ -143,6 +154,20 @@ namespace XUnitDemo.Test
             //This test method works twice because "InlineData" attribute written twice. So that the method test their values.
 
             Assert.Equal(total, calc.Add(num1, num2));
+        }
+
+        [Theory]
+        [InlineData(9, 8, 72)]
+        public void Multiple_AnyNumbers_Test(int num1, int num2, int total)
+        {
+            //Arrange
+            myMock.Setup(x => x.Multiple(num1, num2)).Returns(total);
+
+            //Act
+            var result = calc.Multiple(num1,num2);
+
+            //Assert
+            Assert.Equal(result, total);
         }
     }
 }

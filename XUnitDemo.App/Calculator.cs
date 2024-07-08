@@ -18,5 +18,10 @@ namespace XUnitDemo.App
         {
             return _calculatorService.Add(x, y);
         }
+
+        public int Multiple(int x, int y)
+        {
+            return _calculatorService.Multiple(x, y);
+        }
     }
 }

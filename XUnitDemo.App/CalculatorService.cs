@@ -16,5 +16,10 @@ namespace XUnitDemo.App
             }
             return x + y;
         }
+
+        public int Multiple(int x, int y)
+        {
+            return x * y;
+        }
     }
 }
