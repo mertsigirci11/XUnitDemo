@@ -19,6 +19,11 @@ namespace XUnitDemo.App
             return _calculatorService.Add(x, y);
         }
 
+        public int Divide(int numberToBeDivided, int dividerNumber)
+        {
+            return _calculatorService.Divide(numberToBeDivided, dividerNumber);
+        }
+
         public int Multiple(int x, int y)
         {
             return _calculatorService.Multiple(x, y);

@@ -11,5 +11,7 @@ namespace XUnitDemo.App
         public int Add(int x, int y);
 
         public int Multiple(int x, int y);
+
+        public int Divide(int numberToBeDivided, int dividerNumber);
     }
 }

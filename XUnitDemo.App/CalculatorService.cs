@@ -17,6 +17,15 @@ namespace XUnitDemo.App
             return x + y;
         }
 
+        public int Divide(int numberToBeDivided, int dividerNumber)
+        {
+            if (dividerNumber == 0)
+            {
+                throw new Exception("Number can't divide by zero.");
+            }
+            return numberToBeDivided / dividerNumber;
+        }
+
         public int Multiple(int x, int y)
         {
             return x * y;

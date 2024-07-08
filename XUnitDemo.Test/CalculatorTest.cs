@@ -28,7 +28,7 @@ namespace XUnitDemo.Test
         */
 
         [Fact]
-        public void Add_ReturnTrueResult_Test()
+        public void Add_AnyNumbers_ReturnResult()
         {
             //Arrange
             int firstNumber = 8, secondNumber = 5, expectedValue = 13;
@@ -132,7 +132,7 @@ namespace XUnitDemo.Test
         [Theory]
         [InlineData(10, 15, 24)]
         [InlineData(11, 5, 16)]
-        public void Add_ExceptZeroValues_Test(int num1, int num2, int total)
+        public void Add_ExceptZeroValues_ReturnResult(int num1, int num2, int total)
         {
             //This test method works twice because "InlineData" attribute written twice. So that the method test their values.
 
@@ -151,7 +151,7 @@ namespace XUnitDemo.Test
         [Theory]
         [InlineData(0, 45, 0)]
         [InlineData(42, 0, 0)]
-        public void Add_ForZeroValues_Test(int num1, int num2, int total)
+        public void Add_ForZeroValues_ReturnZero(int num1, int num2, int total)
         {
             //This test method works twice because "InlineData" attribute written twice. So that the method test their values.
 
@@ -160,7 +160,7 @@ namespace XUnitDemo.Test
 
         [Theory]
         [InlineData(9, 8, 72)]
-        public void Multiple_AnyNumbers_Test(int num1, int num2, int total)
+        public void Multiple_AnyNumbers_ReturnResult(int num1, int num2, int total)
         {
             //Arrange
             myMock.Setup(x => x.Multiple(num1, num2)).Returns(total);
@@ -172,6 +172,33 @@ namespace XUnitDemo.Test
             Assert.Equal(result, total);
             myMock.Verify(x => x.Add(num1,num2), Times.Never);
             myMock.Verify(x => x.Multiple(num1,num2), Times.Once);
+        }
+
+        [Theory]
+        [InlineData(20,0)]
+        public void Divide_DivideByZero_ThrowException(int numberToBeDivided, int dividerNumber)
+        {
+            //Arrange
+            myMock.Setup(x => x.Divide(numberToBeDivided, dividerNumber)).Throws(new Exception("Number can't divide by zero."));
+
+            //Assert
+            var exception = Assert.Throws<Exception>(() => calc.Divide(numberToBeDivided,dividerNumber));
+            Assert.Equal(exception.Message, "Number can't divide by zero.");
+        }
+
+        [Theory]
+        [InlineData(20, 10, 2)]
+        public void Divide_DivideByExceptZero_ReturnResult(int numberToBeDivided, int dividerNumber, int expectedResult)
+        {
+            //Arrange
+            myMock.Setup(x => x.Divide(numberToBeDivided, dividerNumber)).Returns(expectedResult);
+
+            //Act
+            var result = calc.Divide(numberToBeDivided, dividerNumber);
+
+            //Assert
+            Assert.Equal(expectedResult, result);
+            myMock.Verify(x => x.Divide(numberToBeDivided,dividerNumber), Times.Once);
         }
     }
 }
