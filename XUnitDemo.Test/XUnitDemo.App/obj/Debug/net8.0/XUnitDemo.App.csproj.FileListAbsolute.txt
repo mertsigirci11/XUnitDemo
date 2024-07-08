@@ -1,0 +1,11 @@
+C:\Users\Mert\Desktop\XUnitDemo\XUnitDemo.App\bin\Debug\net8.0\XUnitDemo.App.deps.json
+C:\Users\Mert\Desktop\XUnitDemo\XUnitDemo.App\bin\Debug\net8.0\XUnitDemo.App.dll
+C:\Users\Mert\Desktop\XUnitDemo\XUnitDemo.App\bin\Debug\net8.0\XUnitDemo.App.pdb
+C:\Users\Mert\Desktop\XUnitDemo\XUnitDemo.App\obj\Debug\net8.0\XUnitDemo.App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mert\Desktop\XUnitDemo\XUnitDemo.App\obj\Debug\net8.0\XUnitDemo.App.AssemblyInfoInputs.cache
+C:\Users\Mert\Desktop\XUnitDemo\XUnitDemo.App\obj\Debug\net8.0\XUnitDemo.App.AssemblyInfo.cs
+C:\Users\Mert\Desktop\XUnitDemo\XUnitDemo.App\obj\Debug\net8.0\XUnitDemo.App.csproj.CoreCompileInputs.cache
+C:\Users\Mert\Desktop\XUnitDemo\XUnitDemo.App\obj\Debug\net8.0\XUnitDemo.App.dll
+C:\Users\Mert\Desktop\XUnitDemo\XUnitDemo.App\obj\Debug\net8.0\refint\XUnitDemo.App.dll
+C:\Users\Mert\Desktop\XUnitDemo\XUnitDemo.App\obj\Debug\net8.0\XUnitDemo.App.pdb
+C:\Users\Mert\Desktop\XUnitDemo\XUnitDemo.App\obj\Debug\net8.0\ref\XUnitDemo.App.dll
