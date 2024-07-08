@@ -14,7 +14,7 @@ namespace XUnitDemo.Test
 
         public CalculatorTest()
         {
-            calc = new Calculator();
+            calc = null;
         }
 
         /*

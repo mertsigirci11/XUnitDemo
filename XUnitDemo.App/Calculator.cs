@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace XUnitDemo.App
 {
-    public class Calculator
+    public class Calculator : ICalculatorService
     {
+        private ICalculatorService _calculatorService;
+
+        public Calculator(ICalculatorService calculatorService)
+        {
+            _calculatorService = calculatorService;
+        }
         public int Add(int x, int y)
         {
-            if (x == 0 || y == 0)
-            {
-                return 0;
-            }
-            return x + y;
+            return _calculatorService.Add(x, y);
         }
     }
 }
