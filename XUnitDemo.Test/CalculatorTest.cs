@@ -144,6 +144,8 @@ namespace XUnitDemo.Test
 
             //Assert  
             Assert.Equal(total, actualTotal);
+            myMock.Verify(x => x.Add(num1, num2), Times.Once);
+            myMock.Verify(x => x.Multiple(num1, num2), Times.Never);
         }
 
         [Theory]
@@ -168,6 +170,8 @@ namespace XUnitDemo.Test
 
             //Assert
             Assert.Equal(result, total);
+            myMock.Verify(x => x.Add(num1,num2), Times.Never);
+            myMock.Verify(x => x.Multiple(num1,num2), Times.Once);
         }
     }
 }
