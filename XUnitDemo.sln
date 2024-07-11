@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitDemo.App", "XUnitDemo.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitDemo.Test", "XUnitDemo.Test\XUnitDemo.Test.csproj", "{479F0A87-A739-4646-9555-D17A4FA3F566}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitDemo.MVCApp", "XUnitDemo.MVCApp\XUnitDemo.MVCApp.csproj", "{0B1FEC3D-2FE3-41C4-984F-E1C6B7FFB6E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitDemo.MVCAppTest", "XUnitDemo.MVCAppTest\XUnitDemo.MVCAppTest.csproj", "{5EE202B9-3863-489C-B004-0E89D0480554}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{479F0A87-A739-4646-9555-D17A4FA3F566}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{479F0A87-A739-4646-9555-D17A4FA3F566}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{479F0A87-A739-4646-9555-D17A4FA3F566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B1FEC3D-2FE3-41C4-984F-E1C6B7FFB6E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B1FEC3D-2FE3-41C4-984F-E1C6B7FFB6E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B1FEC3D-2FE3-41C4-984F-E1C6B7FFB6E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B1FEC3D-2FE3-41C4-984F-E1C6B7FFB6E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EE202B9-3863-489C-B004-0E89D0480554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE202B9-3863-489C-B004-0E89D0480554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE202B9-3863-489C-B004-0E89D0480554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE202B9-3863-489C-B004-0E89D0480554}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
