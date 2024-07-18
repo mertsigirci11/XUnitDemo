@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mert\\Desktop\\XUnitDemo\\XUnitDemo.App\\XUnitDemo.App.csproj": {}
+    "C:\\Users\\Mert\\Documents\\GitHub\\XUnitDemo\\XUnitDemo.App\\XUnitDemo.App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mert\\Desktop\\XUnitDemo\\XUnitDemo.App\\XUnitDemo.App.csproj": {
+    "C:\\Users\\Mert\\Documents\\GitHub\\XUnitDemo\\XUnitDemo.App\\XUnitDemo.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mert\\Desktop\\XUnitDemo\\XUnitDemo.App\\XUnitDemo.App.csproj",
+        "projectUniqueName": "C:\\Users\\Mert\\Documents\\GitHub\\XUnitDemo\\XUnitDemo.App\\XUnitDemo.App.csproj",
         "projectName": "XUnitDemo.App",
-        "projectPath": "C:\\Users\\Mert\\Desktop\\XUnitDemo\\XUnitDemo.App\\XUnitDemo.App.csproj",
+        "projectPath": "C:\\Users\\Mert\\Documents\\GitHub\\XUnitDemo\\XUnitDemo.App\\XUnitDemo.App.csproj",
         "packagesPath": "C:\\Users\\Mert\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mert\\Desktop\\XUnitDemo\\XUnitDemo.App\\obj\\",
+        "outputPath": "C:\\Users\\Mert\\Documents\\GitHub\\XUnitDemo\\XUnitDemo.App\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mert\\AppData\\Roaming\\NuGet\\NuGet.Config",

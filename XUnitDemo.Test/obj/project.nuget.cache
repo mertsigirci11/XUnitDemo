@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "osGnoiWbG4JkeMKAddHwc4riAIr1Py0qfOYZ+ojxAhmsN5joUphL1YhnTibtrxa/u1obXq6E1wDBHv1UVhfpcA==",
+  "dgSpecHash": "oEByddwh2SeGVh+0nTNJJrzNhaVFlHHvJKkIop0Hq70MBqFHXZiotjfOz32/y1bTfYytDMLikjyiNToiJKemww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mert\\Desktop\\XUnitDemo\\XUnitDemo.Test\\XUnitDemo.Test.csproj",
+  "projectFilePath": "C:\\Users\\Mert\\Documents\\GitHub\\XUnitDemo\\XUnitDemo.Test\\XUnitDemo.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mert\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\Mert\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",

@@ -4,7 +4,7 @@
     {
         Task CreateAsync(TEntity entity);
         Task<IEnumerable<TEntity>> GetAllAsync();
-        Task<TEntity> GetByIdAsync(int id);
+        Task<TEntity> GetByIdAsync(int? id);
         public void Update(TEntity entity);
         public void Delete(TEntity entity);
     }

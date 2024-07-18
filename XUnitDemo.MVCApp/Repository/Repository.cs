@@ -31,7 +31,7 @@ namespace XUnitDemo.MVCApp.Repository
             return await _dbSet.ToListAsync<TEntity>();
         }
 
-        public async Task<TEntity> GetByIdAsync(int id)
+        public async Task<TEntity> GetByIdAsync(int? id)
         {
             return await _dbSet.FindAsync(id);
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l8sQw9o+xOTfCIg0i0D+Dd46MDQUSCUsUnangXhgtr2Jjmb85vpci5uSrsWBqFx6BQwebEsdTKtZXzdG96TFjg==",
+  "dgSpecHash": "V0znrqRLtrPmGa2gEdtFKe+UShaCcA9NUZI6wjBsuv81upSnZ3vW5b7wUQQIoJO6GfHg9jcXUO7NgyIl8o/AtA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mert\\Desktop\\XUnitDemo\\XUnitDemo.MVCApp\\XUnitDemo.MVCApp.csproj",
+  "projectFilePath": "C:\\Users\\Mert\\Documents\\GitHub\\XUnitDemo\\XUnitDemo.MVCApp\\XUnitDemo.MVCApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mert\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Mert\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

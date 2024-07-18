@@ -7844,11 +7844,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mert\\Desktop\\XUnitDemo\\XUnitDemo.MVCApp\\XUnitDemo.MVCApp.csproj",
+      "projectUniqueName": "C:\\Users\\Mert\\Documents\\GitHub\\XUnitDemo\\XUnitDemo.MVCApp\\XUnitDemo.MVCApp.csproj",
       "projectName": "XUnitDemo.MVCApp",
-      "projectPath": "C:\\Users\\Mert\\Desktop\\XUnitDemo\\XUnitDemo.MVCApp\\XUnitDemo.MVCApp.csproj",
+      "projectPath": "C:\\Users\\Mert\\Documents\\GitHub\\XUnitDemo\\XUnitDemo.MVCApp\\XUnitDemo.MVCApp.csproj",
       "packagesPath": "C:\\Users\\Mert\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mert\\Desktop\\XUnitDemo\\XUnitDemo.MVCApp\\obj\\",
+      "outputPath": "C:\\Users\\Mert\\Documents\\GitHub\\XUnitDemo\\XUnitDemo.MVCApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mert\\AppData\\Roaming\\NuGet\\NuGet.Config",
