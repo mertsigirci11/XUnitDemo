@@ -76,9 +76,9 @@ namespace XUnitDemo.MVCApp.Controllers
         }
 
         // GET: Products/Edit/5
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> Edit(int? id)
         {
-            if (!(id > 0))
+            if (id == null)
             {
                 return NotFound();
             }
@@ -87,7 +87,7 @@ namespace XUnitDemo.MVCApp.Controllers
             var product = await _repository.GetByIdAsync(id);
             if (product == null)
             {
-                return NotFound();
+                return RedirectToAction("Index");
             }
             return View(product);
         }
@@ -95,9 +95,9 @@ namespace XUnitDemo.MVCApp.Controllers
         // POST: Products/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Price,Stock,Color")] Product product)
+        public async Task<IActionResult> Edit(int? id, [Bind("Id,Name,Price,Stock,Color")] Product product)
         {
-            if (id != product.Id)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -110,15 +110,16 @@ namespace XUnitDemo.MVCApp.Controllers
                     //await _context.SaveChangesAsync();
                     _repository.Update(product);
                 }
-                catch (DbUpdateConcurrencyException)
+                catch (DbUpdateConcurrencyException _exception)
                 {
-                    if (!ProductExists(product.Id))
+                    bool isProductExists = _repository.GetByIdAsync(id) != null;
+                    if (!isProductExists)
                     {
                         return NotFound();
                     }
                     else
                     {
-                        throw;
+                        throw _exception;
                     }
                 }
                 return RedirectToAction(nameof(Index));
@@ -127,9 +128,9 @@ namespace XUnitDemo.MVCApp.Controllers
         }
 
         // GET: Products/Delete/5
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int? id)
         {
-            if (!(id > 0))
+            if (id == null)
             {
                 return NotFound();
             }
@@ -160,12 +161,6 @@ namespace XUnitDemo.MVCApp.Controllers
 
             //await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-        }
-
-        private bool ProductExists(int id)
-        {
-            //return _context.Products.Any(e => e.Id == id);
-            return _repository.GetByIdAsync(id) != null;
         }
     }
 }

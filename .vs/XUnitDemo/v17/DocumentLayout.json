@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Mert\\Documents\\GitHub\\XUnitDemo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5EE202B9-3863-489C-B004-0E89D0480554}|XUnitDemo.MVCAppTest\\XUnitDemo.MVCAppTest.csproj|c:\\users\\mert\\documents\\github\\xunitdemo\\xunitdemo.mvcapptest\\productscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EE202B9-3863-489C-B004-0E89D0480554}|XUnitDemo.MVCAppTest\\XUnitDemo.MVCAppTest.csproj|solutionrelative:xunitdemo.mvcapptest\\productscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0B1FEC3D-2FE3-41C4-984F-E1C6B7FFB6E1}|XUnitDemo.MVCApp\\XUnitDemo.MVCApp.csproj|c:\\users\\mert\\documents\\github\\xunitdemo\\xunitdemo.mvcapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B1FEC3D-2FE3-41C4-984F-E1C6B7FFB6E1}|XUnitDemo.MVCApp\\XUnitDemo.MVCApp.csproj|solutionrelative:xunitdemo.mvcapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0B1FEC3D-2FE3-41C4-984F-E1C6B7FFB6E1}|XUnitDemo.MVCApp\\XUnitDemo.MVCApp.csproj|c:\\users\\mert\\documents\\github\\xunitdemo\\xunitdemo.mvcapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B1FEC3D-2FE3-41C4-984F-E1C6B7FFB6E1}|XUnitDemo.MVCApp\\XUnitDemo.MVCApp.csproj|solutionrelative:xunitdemo.mvcapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EE202B9-3863-489C-B004-0E89D0480554}|XUnitDemo.MVCAppTest\\XUnitDemo.MVCAppTest.csproj|c:\\users\\mert\\documents\\github\\xunitdemo\\xunitdemo.mvcapptest\\productscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EE202B9-3863-489C-B004-0E89D0480554}|XUnitDemo.MVCAppTest\\XUnitDemo.MVCAppTest.csproj|solutionrelative:xunitdemo.mvcapptest\\productscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 252,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\Mert\\Documents\\GitHub\\XUnitDemo\\XUnitDemo.MVCApp\\Models\\Product.cs",
               "RelativeDocumentMoniker": "XUnitDemo.MVCApp\\Models\\Product.cs",
@@ -34,31 +34,30 @@
               "RelativeToolTip": "XUnitDemo.MVCApp\\Models\\Product.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T15:40:33.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-18T15:40:33.482Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\Mert\\Documents\\GitHub\\XUnitDemo\\XUnitDemo.MVCApp\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "XUnitDemo.MVCApp\\Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Users\\Mert\\Documents\\GitHub\\XUnitDemo\\XUnitDemo.MVCApp\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "XUnitDemo.MVCApp\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFwAAAAJAAAA",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAqwKMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-18T10:31:45.044Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ProductsControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\Mert\\Documents\\GitHub\\XUnitDemo\\XUnitDemo.MVCAppTest\\ProductsControllerTest.cs",
               "RelativeDocumentMoniker": "XUnitDemo.MVCAppTest\\ProductsControllerTest.cs",
               "ToolTip": "C:\\Users\\Mert\\Documents\\GitHub\\XUnitDemo\\XUnitDemo.MVCAppTest\\ProductsControllerTest.cs",
               "RelativeToolTip": "XUnitDemo.MVCAppTest\\ProductsControllerTest.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAwwFgAAAAOAAAA",
+              "ViewState": "AQIAAJcAAAAAAAAAAAAYwAABAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-18T10:30:43.388Z",
               "EditorCaption": ""

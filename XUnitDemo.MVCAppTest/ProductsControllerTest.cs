@@ -5,6 +5,8 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis;
+using Microsoft.EntityFrameworkCore;
 using Moq;
 using Xunit;
 using XUnitDemo.MVCApp.Controllers;
@@ -147,5 +149,111 @@ namespace XUnitDemo.MVCAppTest
             Assert.Equal(_products.First().Id, product.Id);
         }
 
+        [Fact]
+        public async void EditGET_WhenIdIsNull_ReturnNotFound()
+        {
+            //Arrange
+            _mockProductRepo.Setup(x => x.Update(null));
+
+            //Act
+            var result = await _productsController.Edit(null);
+            var redirect = Assert.IsType<NotFoundResult>(result);
+
+            //Assert
+            Assert.Equal((int)HttpStatusCode.NotFound, redirect.StatusCode);
+        }
+
+        [Fact]
+        public async void EditGET_WhenIdIsNotNullProductNotFound_RedirectToIndex()
+        {
+            //Arrange
+            Product product = null;
+            _mockProductRepo.Setup(x => x.GetByIdAsync(It.IsAny<int>())).ReturnsAsync(product);
+
+            //Act
+            var result = await _productsController.Edit(It.IsAny<int>());
+            var redirect = Assert.IsType<RedirectToActionResult>(result);
+
+            //Assert
+            Assert.Equal("Index", redirect.ActionName);
+            _mockProductRepo.Verify(x => x.GetByIdAsync(It.IsAny<int>()), Times.Once);
+        }
+
+        [Fact]
+        public async void EditGET_WhenIdIsNotNullAndProductFound_ReturnViewAndModel()
+        {
+            //Arrange
+            _mockProductRepo.Setup(x => x.GetByIdAsync(It.IsAny<int>())).ReturnsAsync(_products.First());
+
+            //Act
+            var result = await _productsController.Edit(It.IsAny<int>());
+            var resultView = Assert.IsType<ViewResult>(result);
+            var resultViewModel = Assert.IsAssignableFrom<Product>(resultView.Model);
+
+            //Assert
+            Assert.Equal(_products.First().Id, resultViewModel.Id);
+            _mockProductRepo.Verify(x => x.GetByIdAsync(It.IsAny<int>()), Times.Once);
+        }
+
+        [Fact]
+        public async void EditPOST_WhenIdIsNull_ReturnNotFound()
+        {
+            //Arrange
+            
+            //Act
+            var result = await _productsController.Edit(null);
+            var viewResult = Assert.IsType<NotFoundResult>(result);
+
+            //Assert
+            Assert.Equal((int)HttpStatusCode.NotFound, viewResult.StatusCode);
+        }
+
+        [Fact]
+        public async void EditPOST_WhenIdIsNotNullAndModelStateIsNotValid_ReturnView()
+        {
+            //Arrange
+            _productsController.ModelState.AddModelError("Name", "Name field is required");
+
+            //Act
+            var result = await _productsController.Edit(It.IsAny<int>(),_products.First());
+            var resultView = Assert.IsType<ViewResult>(result);
+            var viewModel = Assert.IsAssignableFrom<Product>(resultView.Model);
+
+            //Assert
+            Assert.Equal(_products.First().Id, viewModel.Id);
+        }
+
+        [Fact]
+        public async void EditPOST_WhenIdIsNotNullAndModelStateValid_RedirectToIndex()
+        {
+            //Arrange
+            _mockProductRepo.Setup(x => x.Update(It.IsAny<Product>())).Callback<Product>(x => x = _products.First());
+
+            //Act
+            var result = await _productsController.Edit(It.IsAny<int>(),It.IsAny<Product>());
+            var viewResult = Assert.IsType<RedirectToActionResult>(result);
+
+            //Assert
+            Assert.Equal("Index", viewResult.ActionName);
+            _mockProductRepo.Verify(x => x.Update(It.IsAny<Product>()), Times.Once);
+        }
+
+        [Fact]
+        public async void EditPOST_WhenIdIsNotNullAndModelStateValid_ThrowException()
+        {
+            //Arrange
+            var exception = new DbUpdateConcurrencyException();
+            _mockProductRepo.Setup(x => x.Update(It.IsAny<Product>())).Throws(exception);
+            _mockProductRepo.Setup(x => x.GetByIdAsync(It.IsAny<int>())).ReturnsAsync(_products.First());
+
+            //Act
+            var ex = await Assert.ThrowsAsync<DbUpdateConcurrencyException>(() => _productsController.Edit(_products.First().Id, _products.First()));
+
+            //Assert
+            _mockProductRepo.Verify(x => x.GetByIdAsync(It.IsAny<int>()), Times.Once);
+            _mockProductRepo.Verify(x => x.Update(It.IsAny<Product>()), Times.Once);
+            Assert.Equal(exception, ex);
+
+        }
     }
 }

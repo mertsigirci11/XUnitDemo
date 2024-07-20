@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("XUnitDemo.MVCApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+111e3c6b3fb1138ca3164c794f75c6bc75d2af62")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31e7341366677bce6c05329a061e5f73c847345e")]
 [assembly: System.Reflection.AssemblyProductAttribute("XUnitDemo.MVCApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("XUnitDemo.MVCApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
